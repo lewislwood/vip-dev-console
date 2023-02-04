@@ -1,0 +1,24 @@
+
+
+.devTools {
+    display: flex;
+    justify-content: space-between;
+}
+.edge {
+    width : 10%;
+    padding:0;
+    margin: 0;
+}
+.rightEdge {
+    text-align: right;
+    font-size :xx-large;
+    background-color: blue;
+    color: yellow;
+}
+.helpLog {
+    width: 40%;
+}
+.mouseTools {
+    width: 20%;
+}
+

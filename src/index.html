@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="devtools.css">
+    
+    <title>Dev Ops Test</title>
+</head>
+<body>
+    <style>
+                body {
+            color: white;
+            background-color : black;
+            font-size:28px;
+        }
+    </style>
+    <div>
+        <h1>Dev Ops Testing Ground</h1>
+        <div class="myTest">
+            <p>This is where I can test console.log</p>
+            <button>Click Me</button>
+        </div>
+    </div>  
+    
+    <div id="devOpsRoot" style="width: 100%;display : block;">
+        <style>
+    .devOpsNotVisible {
+        transform: scale(0,0);
+      z-index: 0;
+      position: absolute;
+      top: -10;
+      left: -10;
+    }
+    .devOpsContainer {
+        display : flex;
+        flex-direction: row;
+        border-width: 3px;
+        border-style: outset;
+        flex-direction: row;
+    margin: 5px;
+    padding: 5px;
+    background-color: #000080; 
+    color: yellow;
+    
+    }
+    #devOpsLogSection {
+        flex-direction: column;
+        justify-self: left;;
+    }
+    .devOpsNoteContainer {
+        display: flex;
+        justify-self: right;
+    width : 600px;
+    font-size:larger;
+    border: solid;
+    }
+        </style>
+        <div id="devOpsContainer" class="devOpsContainer" aria-hidden="false" >
+        <div id="devOpsLogSection">
+    </div >
+    
+    
+    </div >
+    
+    </div >
+    
+
+
+    <script src="./devops.js"></script>
+    <script src="./devopstest.js"></script>
+
+    
+</body>
+</html>

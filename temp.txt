@@ -1,0 +1,2 @@
+CONTAINER ID   IMAGE             COMMAND                  CREATED        STATUS             PORTS                  NAMES
+69b87503aba1   public-lw-nginx   "/docker-entrypoint.…"   20 hours ago   Up About an hour   0.0.0.0:8080->80/tcp   lw-webserver
