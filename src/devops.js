@@ -27,11 +27,11 @@ class DevOps {
             }
             else {
                 DevOps.initLog(dr);
-                DevOps.initNotes(dr);
             }
             ; // devOps Containter
         }
         ; //devOpsRoot 
+        DevOps.initNotes(dc.root);
         let b = document.body.querySelector("#devOpsHotKeysButton");
         if (!(b)) {
             b = document.createElement("button");

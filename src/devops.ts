@@ -82,9 +82,10 @@ private static initialize() {
     if (!(dc.container)) {DevOps.createContainer();}
     else {
       DevOps.initLog(dr);
-    DevOps.initNotes(dr);
   }; // devOps Containter
 }; //devOpsRoot 
+DevOps.initNotes(dc.root);
+
     let b: HTMLButtonElement =  <HTMLButtonElement>document.body.querySelector("#devOpsHotKeysButton");
 if (!(b)) { 
 b = document.createElement("button");
