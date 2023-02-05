@@ -98,6 +98,9 @@ body.insertBefore( b, body.children[0]);
 }
 dc.hotKeysButton = b;
 if (b) b.onclick = (e) => { DevOps.hotKeyButtonAction(e);};
+window.addEventListener( "keyup",(e)  => { DevOps.keyHandler(e);});
+DevOps.setActiveActions();
+DevOps.toggleMode(DevOps.mode, true);
 
   DevOps.log("DevOps Loaded successfully.");
   
@@ -117,9 +120,7 @@ if (!(dc.log )) dc.log = <HTMLParagraphElement>root.querySelector("#devOpsLog");
 }; // if containter
 
   if (dc.clearButton)      dc.clearButton.onclick = () => {DevOps.clearLog();};
-    window.addEventListener( "keyup",(e)  => { DevOps.keyHandler(e);});
-  DevOps.setActiveActions();
-  DevOps.toggleMode(DevOps.mode, true);
+  
 } catch(e:any) {
 console.log('DevOps.initLog error: '+ e.message);
 }; //  catch

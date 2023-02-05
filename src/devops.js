@@ -45,6 +45,9 @@ class DevOps {
         dc.hotKeysButton = b;
         if (b)
             b.onclick = (e) => { DevOps.hotKeyButtonAction(e); };
+        window.addEventListener("keyup", (e) => { DevOps.keyHandler(e); });
+        DevOps.setActiveActions();
+        DevOps.toggleMode(DevOps.mode, true);
         DevOps.log("DevOps Loaded successfully.");
     }
     ; // Initialize()}
@@ -77,9 +80,6 @@ class DevOps {
             ; // if containter
             if (dc.clearButton)
                 dc.clearButton.onclick = () => { DevOps.clearLog(); };
-            window.addEventListener("keyup", (e) => { DevOps.keyHandler(e); });
-            DevOps.setActiveActions();
-            DevOps.toggleMode(DevOps.mode, true);
         }
         catch (e) {
             console.log('DevOps.initLog error: ' + e.message);
